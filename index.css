@@ -74,11 +74,11 @@ nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
   .mega-col{width:100%}
 }
 	
-	marquee{width:580px;
+	marquee{width:180px;
 color:blue;
   background:black;
   background-size:180px;
-  left:50%;
+
 }
 .visible-scrollbar,
 .invisible-scrollbar,
