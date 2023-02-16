@@ -2,7 +2,7 @@
   bottom{}
 }
 body{
-  background-image: url('https://user-images.githubusercontent.com/106701602/219473352-9ee9172b-5ebd-489e-965d-2aa8633c82da.jpg'), linear-gradient(0deg, rgba(15,11,131,1) 34%, rgba(140,175,240,0.38139005602240894) 100%);
+  background-image: linear-gradient(0deg, rgba(15,11,131,1) 34%, rgba(140,175,240,0.38139005602240894) 100%), url('https://user-images.githubusercontent.com/106701602/219473352-9ee9172b-5ebd-489e-965d-2aa8633c82da.jpg');
   
   
   
