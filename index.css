@@ -74,7 +74,7 @@ nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
   .mega-col{width:100%}
 }
 	
-	marquee{
+	marquee{width:580px;
 color:blue;
   background:black;
   background-size:180px;
