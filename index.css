@@ -1,12 +1,13 @@
-      ::-webkit-scrollbar {
+    body  ::-webkit-scrollbar {
 width:10px;
 height: 10px;
 
-}::-webkit-scrollbar-track {
+body}::-webkit-scrollbar-track {
 background:#333;
+	border-radius:50px;
 }
-::-webkit-scrollbar-thumb {
-
+body::-webkit-scrollbar-thumb {
+border-radius:50px;
 background: linear-gradient(0deg, rgba(34,193,195,0.43461134453781514) 0%, rgba(65,45,253,0.5214460784313726) 100%);
 
 }
