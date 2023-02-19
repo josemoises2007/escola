@@ -13,7 +13,136 @@
     <div class="loading-icon"></div>
   </div>
 </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<style>
+	<img id="mouse" src="https://user-images.githubusercontent.com/106701602/214385974-16003246-4b50-43be-815f-6ee9648bcdbb.png" alt="mouse">
+	
+	</script>
+<script>$(document).bind('mousemove', function(e){
+    $('#mouse').css({
+       left:e.pageX + 20,
+       top:e.pageY
+    });
+});
+	
+	
+	
+    </script>
+
+<script>/* Invoca Mensagem */
+messagebox("Bem vindo ao Sistema!")
+
+/*********************
+|  JS DO MESSAGEBOX  |
+*********************/
+
+function messagebox(_texto) {
+  // remove alertas antigos
+  let oldMessage = document.getElementsByTagName("messagebox"), index
+  for (index = oldMessage.length - 1; index >= 0; index--) {
+    oldMessage[index].parentNode.removeChild(oldMessage[index]) }
+
+  // constrói alerta
+  const messageBox = document.createElement("messagebox")
+  const texto = document.createTextNode(_texto)
+  messageBox.appendChild(texto)
+  document.body.appendChild(messageBox)
+
+  // define duração
+  messageBox.classList.add('show')
+  setTimeout( function () {
+    if (document.body.contains(messageBox)) {
+      document.body.removeChild(messageBox) }
+  }, 5000)
+}</script>
+
+
+<style>
+	
+messagebox {
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+
+  padding: 16px;
+  min-width: 250px;
+  width: 200px;
+  min-height: 1em;
+  height: auto;
+
+  right: 20px;
+  top: 80px;
+
+  background-color: #2196f3;
+  color: white;
+  box-shadow: 3px 3px 10px #DDDDDD
+
+  text-align: center;
+  border-radius: 5px;
+}
+
+messagebox.show {
+  visibility: visible;
+
+  -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+  animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+}
+
+/************
+|  EFFECTS  |
+************/
+
+/* Fade In */
+
+@-webkit-keyframes fadeIn {
+  from {right: 0; opacity: 0;} 
+  to {right: 20px; opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  from {right: 0; opacity: 0;} 
+  to {right: 20px; opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  from {right: 0; opacity: 0;} 
+  to {right: 20px; opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {right: 0; opacity: 0;} 
+  to {right: 20px; opacity: 1;}
+}
+
+/* Fade Out */
+
+@-webkit-keyframes fadeOut {
+  from {right: 20px; opacity: 1;} 
+  to {right: 0; opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+  from {right: 20px; opacity: 1;} 
+  to {right: 0; opacity: 0;}
+}
+
+@-o-keyframes fadeOut {
+  from {right: 20px; opacity: 1;} 
+  to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {right: 20px; opacity: 1;}
+  to {right: 0; opacity: 0;}
+}
+	
+	
+#mouse {
+  width:75px; 
+  position: absolute;
+  float: left;
+}
+*{
+  cursor:none;
+}
 .overflow{
   overflow:hidden;
 }
