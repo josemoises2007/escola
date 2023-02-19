@@ -6,7 +6,63 @@
 	
 </header>
 
-<body><div id="header">
+<body>
+	
+	<div id="loading">
+  <div class="loding-wrap">
+    <div class="loading-icon"></div>
+  </div>
+</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+.overflow{
+  overflow:hidden;
+}
+
+#loading{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: blue;
+  z-index: 999;
+}
+
+.loding-wrap{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.loading-icon{
+  width: 100px;
+  height: 100px;
+  border:solid 5px #0c9;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  animation: preloading .5s infinite linear;
+}
+
+
+@keyframes preloading {
+  
+  0%{
+    transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+}
+  
+}</style>
+	<script>$(window).on('load',function(){
+  $('#loading').fadeOut();
+  $('body').removeClass('overflow');
+});</script>
+	
+	<div id="header">
   <div class="logo"><img ="">
     <a href="#"><img src="https://user-images.githubusercontent.com/106701602/214942197-55daa39e-64d0-406f-99f1-dfa66df0104c.png" class="mie"></a>
   </div>  
