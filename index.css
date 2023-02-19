@@ -22,7 +22,7 @@ background-position: center;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(2.3px);
 }
-a{text-decoration:none;color:#fff}
+a{color:#fff}
 *, *:before, *:after {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
 body{
 -webkit-backdrop-filter: blur(2.3px);;width:100%;position:relative}
