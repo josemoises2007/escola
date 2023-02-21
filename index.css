@@ -12,6 +12,83 @@ background: linear-gradient(0deg, rgba(34,193,195,0.43461134453781514) 0%, rgba(
 
 }
 
+main{
+  left:130px;
+}
+.lo{
+  top:100%;
+  left:100%;
+  width:290px;
+  background-image:linear-gradient(0deg, rgba(0,0,0,0.9472163865546218) 0%, rgba(0,0,0,0.38139005602240894) 100%), url(https://user-images.githubusercontent.com/106701602/220428188-5ac7d068-d996-4f38-8f97-0a71dcb51a3e.jpeg) ;
+  background-size: cover;
+  border-radius:10px;
+  margin: 160px auto;
+  text-align:center;
+ background repeat: no-repeat;
+  background position: center;
+  
+}
+body{
+   color:blue;
+   font-family:Verdana;
+}
+.lo .hu{/*img esta dentro del main*/
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  margin:40px auto 15px;  
+}
+
+.e, .q{/*la , es importante por significa q hay mas de 1 elemento*/
+  margin:0;
+  padding:0;  
+}
+.e{
+  font-size:22px;
+  font-weight:normal;
+ 
+  
+}
+.q{
+  font-size:14px;
+}
+ul{
+  list-style:none;
+  padding-left:0;
+  background:red;
+  overflow:hidden;/*para q se pueda capturar la altura del contenidor*/
+  margin-bottom:0;
+  
+}
+ul .lis{
+    float:left;/*siempre q ponemos float hay q añadir overflow a su cont. padre*/
+    width:33.33%;
+    font-size:28px;
+    font-size:regular;
+    padding:15px 0;
+    background:#08A2FF;
+}
+ul .lis :nth-child(2){
+ background:#007FCE;
+}
+ul .lis .l{
+  color:#9CCFF0;
+  display:block;
+  font-size:14px;
+  }
+
+.a{
+  border:3px solid #fff;
+  padding:15px 50px;
+  display:inline-block;/*los enlaces son inline por defecto. para q el enlace respecte el padding, hay q poner inline-block*/;
+  margin:30px 0;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+
 .mie{
   bottom{}
 }
