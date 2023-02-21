@@ -251,6 +251,30 @@ messagebox.show {
 		margin:10px;
 		bottom:530px;
 	}
+	.container-video {
+	margin: auto;
+	width: 75vw;
+  overflow: hidden;
+  position: relative;
+}
+.container-video video {
+  width: 100%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.text {
+	font-family: sans-serif;
+  font-size: 10vw;
+  font-weight: bold;
+	text-align: center;
+	margin: auto;
+
+	color: black;
+	mix-blend-mode: lighten;
+	background-color: white;
+}
+
 </style><marquee behavior="alternate" style="border:solid">👍👌escola <br/>adestre-se</marquee></center>
 <div class="horizontal">
 	<lu><a href="https://barafurry.000webhostapp.com/index.php" class="a">publicar videos</a></lu>
@@ -258,5 +282,10 @@ messagebox.show {
 	<lu><a href="https://barafurry.000webhostapp.com/imagem/index.php" class="a">galeria</a></lu>
 </div>
 <center>
-
+<div class="container-video">
+  <video loop autoplay muted>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  </video>
+  <p class="text">ESCOLA DE ADESTRAMENTOS</p>
+</div>
 </body>
