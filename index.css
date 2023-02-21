@@ -19,11 +19,11 @@ background: linear-gradient(0deg, rgba(34,193,195,0.43461134453781514) 0%, rgba(
 .lol{
   top: -700;
     left: 10%;
-position:absolute;
+position:relative;
   background-image:linear-gradient(0deg, rgba(0,0,0,0.9472163865546218) 0%, rgba(0,0,0,0.38139005602240894) 100%), url(https://user-images.githubusercontent.com/106701602/220428188-5ac7d068-d996-4f38-8f97-0a71dcb51a3e.jpeg) ;
   background-size: cover;
   border-radius:10px;
-width: 35%;
+width: 29%;
     height: 70%;
   text-align:center;
  background repeat: no-repeat;
