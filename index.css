@@ -94,10 +94,11 @@ body{
   padding:15px 30px;
   color:white;
   text-decoration:none;
-  text-transform:uppercase;
-  font-weight:bold;
-	border-bottom: 8px solid blue;
-margin: auto;	
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 8px solid blue;
+  margin: auto;
+	
 }
 
 
