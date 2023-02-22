@@ -214,4 +214,5 @@ color:blue;
 .horizontal{
 height:100%;
 width:180px;
-background:white;}
+background:white;
+position:absolute;}
