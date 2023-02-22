@@ -6,9 +6,9 @@
 	
 </header>
 
-<body>
+<body onLoad="loading()">
 	
-	<div id="loading">
+	<div class="loading">
   <div class="loding-wrap">
     <div class="loading-icon"></div>
   </div>
@@ -159,7 +159,7 @@ messagebox.show {
   overflow:hidden;
 }
 
-#loading{
+.loading{
   position:fixed;
   top:0;
   bottom:0;
@@ -198,10 +198,9 @@ messagebox.show {
 }
   
 }</style>
-	<script>$(window).on('load',function(){
-  $('#loading').fadeOut();
-  $('body').removeClass('overflow');
-});</script>
+	<script>function loading(){
+  document.getElementsByClassName('loading')[0].style.display="none"
+}</script>
 	
 	<div id="header">
   <div class="logo"><img ="">
