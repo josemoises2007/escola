@@ -12,7 +12,8 @@
   <div class="loding-wrap">
     <div class="loading-icon"></div>
   </div>
-</div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</div>
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <!-- <img id="mouse" src="https://user-images.githubusercontent.com/106701602/214385974-16003246-4b50-43be-815f-6ee9648bcdbb.png" alt="mouse">
  -->
 <style>
@@ -198,8 +199,13 @@ messagebox.show {
 }
   
 }</style>
-	<script>function loading(){
-  document.getElementsByClassName('loading')[0].style.display="none"
+	<script>const pre_carremento = document.querySelector("div.loading");
+function loading(){
+    pre_carremento.style.opacity = "0";
+
+    setTimeout(() => {
+        pre_carremento.style.display = "none";
+    }, 700);
 }</script>
 	
 	<div id="header">
