@@ -92,13 +92,11 @@ body{
 .a{
   display: block;
   padding:15px 30px;
-  display:block;/*los enlaces son inline por defecto. para q el enlace respecte el padding, hay q poner inline-block*/;
-  margin:30px;
   color:white;
   text-decoration:none;
   text-transform:uppercase;
   font-weight:bold;
-	border: 8px solid blue;
+	border-bottom: 8px solid blue;
 margin: auto;	
 }
 
